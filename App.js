@@ -1,9 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native';
-import colors from './src/theme/colors';
-import Home from './src/screens/home';
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import HomeStackNavigator from './src/navigation/navigator'
 
 export default function App() {
   return (
-    <Home />
+    <NavigationContainer>
+      <HomeStackNavigator/>
+    </NavigationContainer>
   );
 }
