@@ -5,7 +5,7 @@ const colors = {
     textSecondary: '#333',
     textGrey: '#B4B4B4',
     borderColor: '#D4D4D4',
-    backgroundColor: '#E4E4E4',
+    backgroundColor: '#F2F2F2',
     progressGrey: '#C1C1C1',
     white: '#FFFFFF',
     black: '#000000',
