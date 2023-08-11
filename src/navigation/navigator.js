@@ -153,6 +153,7 @@ const HomeStackNavigator = () => {
         <Stack.Navigator screenOptions={screenOptionStyle}>
             <Stack.Screen name="HomeStack" component={BottomTabNavigator} />
             <Stack.Screen name="Profile" component={Profile} />
+            <Stack.Screen name="CapturePhoto" component={CapturePhoto} />
         </Stack.Navigator>
     )
 }

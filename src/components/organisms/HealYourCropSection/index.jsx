@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Pressable } from 'react-native';
 import HealYourCropCards from '../../atoms/HealYourCropCards';
 import HealYourCropHeading from '../../atoms/HealYourCropHeading';
 import colors from '../../../theme/colors';
+import { useNavigation } from '@react-navigation/native';
 
 const ElevationShadow = (elevation) => {
   return {
@@ -15,6 +16,7 @@ const ElevationShadow = (elevation) => {
 };
 
 const YourComponent = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <HealYourCropHeading />
@@ -23,7 +25,7 @@ const YourComponent = () => {
           <HealYourCropCards />
         </View>
         <View style={styles.buttonContainer}>
-          <Pressable style={styles.button}>
+          <Pressable onPress={() => navigation.navigate('CapturePhoto')} style={styles.button}>
             <Text style={styles.buttonText}>Take a Picture</Text>
           </Pressable>
         </View>
