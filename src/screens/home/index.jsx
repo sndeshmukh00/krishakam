@@ -11,7 +11,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 const Home = ({navigation}) => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} showsHorizontalScrollIndicator="false">
 
       {/* Top Image with greeting Section and SearchBar */}
       <HomeUserGreetingCardWithSearch />
